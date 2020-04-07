@@ -80,15 +80,13 @@ run_user='kcptun'
 clear
 
 cat >&1 <<-'EOF'
-#########################################################
-# Kcptun 服务端一键安装脚本                             #
-# 该脚本支持 Kcptun 服务端的安装、更新、卸载及配置      #
-# 脚本作者: Index <kuoruan@gmail.com>                   #
-# 作者博客: https://blog.kuoruan.com/                   #
-# Github: https://github.com/kuoruan/shell-scripts      #
-# QQ交流群: 43391448, 68133628                          #
-#           633945405                                   #
-#########################################################
+##############################################################
+# Kcptun 服务端一键安装脚本                                      #
+# 该脚本支持 Kcptun 服务端的安装、更新、卸载及配置                   #
+# 脚本作者: Index <wenzhifeifeidetutu@gmial.com>                #
+# 作者博客: www.wenergou.com                                    #
+# Github: https://github.com/wenzhifeifeidetutu/shell-scripts  #
+###############################################################
 EOF
 
 # 打印帮助信息
@@ -1238,7 +1236,7 @@ set_kcptun_config() {
 
 	[ -z "$target_addr" ] && target_addr="$D_TARGET_ADDR"
 	cat >&1 <<-'EOF'
-	请输入需要加速的地址
+	请输入需要加速的地址 此地址填写就是你自己的服务器地址
 	可以输入主机名称、IPv4 地址或者 IPv6 地址
 	EOF
 	read -p "(默认: ${target_addr}): " input
